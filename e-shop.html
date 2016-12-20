@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="CSS/e-shop.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="Javascript/shop.js"></script>
 </head>
 <body>
 
@@ -14,8 +16,8 @@
 
 	<header id="header">
 		<img src="Images/logo.png" class="image">
-	
-		<div id="menu">	
+
+		<div id="menu">
 			<nav>
 				<ul id="liste">
 					<li><a href="#" class="options">FOOTWEAR</a></li>
@@ -35,11 +37,12 @@
 			</nav>
 		</div>
 	</header>
-						
+
 						<!-- NIKE SHAPING -->
 
 		<div id="nike">
 			<img src="Images/nike.png" class="shoes">
+			<img src="Images/nike_replace.png" class="shoes_replace">
 			<img src="Images/heart.png" class="heart">
 			<p class="name_of_shoes">NIKE</p>
 			<p class="series_of_shoes">AIR MAX TAVAS SD</p>
@@ -73,15 +76,15 @@
 
 	<section id=origins>
 		<img src="Images/nike_paire.png" class="paire">
-		
-			<p class="story">STORY</p>	
+
+			<p class="story">STORY</p>
 			<h2 class="nike_air">NIKE AIR MAX ORIGINS</h2>
 			<p class="revolution">Nike's revolutionary Air-Sole unit made its way into Nike<br> footwear in the late '70s. In 1987, the Nike Air Max 1<br> debuted with visible air in its heel, allowing fans more than<br> just the feel of Air-Sole comfort</p>
 
 			<p class="benefits">BENEFITS</p>
 
 			<h3 class="model">LAYERED TEXTILE/SYNTHETIC UPPER <br><span class="comments">for lightweight durability and comfort</span></h3>
-			
+
 			<h4 class="model_1">INJECTED PHYLON MIDSOLE DOUBLES <br><span class="comments">Outsole to reduce the overall weight of the shoe</span></h4>
 			<h5 class="model_2">MAX AIR HEEL UNIT <br><span class="comments">delivers maximum lightweight cushioning</span></h5>
 			<h6 class="model_3">RUBBER WAFFLE OUTSOLE <br><span class="comments">Durable, multi-surface traction</span></h6>
@@ -90,7 +93,7 @@
 							<!-- FRAME SHAPING-->
 
 		<div id="frame">
-		<!--	<img src="Images/nike_near.png" class="near">-->
+			<img src="Images/nike_near.png" class="near">
 			<p class="nike">NIKE</p>
 			<p class="series_of_shoes_2">Air max Tavas SD</p>
 			<p class="colors_2">Black/Pink Pow/Tour Yellow/White </p>
@@ -107,7 +110,7 @@
 				</select>
 			</form>
 			<a href="#" class="add_2">ADD TO CART</a>
-		</div>		
+		</div>
 	</section>
 
 							<!-- FOOTER SHAPING-->
@@ -115,19 +118,12 @@
 
 	<footer id="footer">
 		<p class="social">SOCIAL <br><span class="max">#NIKEAIRMAX</span></p>
-
-		<!-- SWIPER -->
-		<div id="lol">
-			<div><img src="Images/slide_1.png" class="slide"></div>
-			<div><img src="Images/slide_2.png" class="slide"></div>
-			<div><img src="Images/slide_3.png" class="slide"></div>
-			<div><img src="Images/slide_4.png" class="slide"></div>
-		</div>
-		<!-- ADD PAGINATION-->
-		<div class="swiper-pagintion"></div>
+				<div id="container">
+					<img src="Images/slide_1.png" class="slide">
+					<img src="Images/slide_2.png" class="slide">
+					<img src="Images/slide_3.png" class="slide">
+					<img src="Images/slide_4.png" class="slide">
+				</div>
 	</footer>
-</div>
-
-<script src="Javascript/e-shop.js" type="text/javascript"></script>
 </body>
 </html>
