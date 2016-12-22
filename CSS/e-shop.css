@@ -92,7 +92,7 @@ body{
     top: 300px;
     width: 40%;
     right: 290px;
-    visibility: hidden;
+		visibility: hidden;
 }
 .heart{
     top: 90px;
@@ -407,13 +407,14 @@ body{
     font-size: medium;
 }
 #container{
-	position: absolute;
+		position: absolute;
     bottom: 50px;
     left: 70px;
+		width: 960px;
 }
 .slide{
 	position: relative;
 	bottom: 120px;
 	width: 20%;
-	padding-left: 40px;
+	padding-left: 40px
 }

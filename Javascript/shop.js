@@ -1,36 +1,50 @@
-console.log("Le dom est prêt !");
+					/* Fonction qui change la propriété CSS quand on clique sur
+						la nike de droite*/
 
-			/* Déclaration de variables dans lesquelles je stocke
-					les classes que je vais manipuler */
-
-var nikeG = document.getElementsByClassName('nikeG'),
-		nikeD = document.getElementsByClassName('nikeD'),
-		recup_shoes = document.getElementsByClassName('shoes'),
-		recup_shoesReplace = document.getElementsByClassName('shoes_replace');
-
-					/*Vérification des classes récupérées en les affichant dans la
-						console */
-console.log(nikeG);
-console.log(nikeD);
-console.log(recup_shoes);
-console.log(recup_shoesReplace);
+$(document).ready(function(){
+		$(".nikeD").click(function(){
+			$(".shoes_replace").css("visibility", "visible");
+			$(".shoes").css("visibility", "hidden");
+		});
+});
 
 					/* Fonction qui change la propriété CSS quand on clique sur
-						la nike de droite */
+						la nike de gauche*/
 
-function masque(){
-		document.getElementsByClassName("shoes_replace").style.visibility=visible;
-		document.getElementsByClassName("shoes").style.visibility=hidden;
-};
+$(document).ready(function(){
+		$(".nikeG").click(function(){
+			$(".shoes").css("visibility", "visible");
+			$(".shoes_replace").css("visibility", "hidden");
+		});
+});
 
-nikeD.addEventListener("click", masque);
 
-					/* Fonction qui change la propriété CSS quand on clique sur
-						la nike de gauche */
+					/* À présent, essayons de créer une interaction du click sur
+						le lien ADD TO CART qui ajoutera 1 dans le panier */
 
-function affiche(){
-		document.getElementsByClassName("shoes_replace").style.visibility=hidden;
-		document.getElementsByClassName("shoes").style.visibility=visible;
-};
+/*
+var ajout = document.getElementsByClassName('ajout'),
+		cart = document.getElementsByClassName('add');
 
-nikeG.addEventListener("click", affiche);
+console.log(ajout);
+console.log(cart);
+
+function plus(){
+		ajout = document.getElementsByClassName('ajout' + 1);
+}
+
+cart.addEventListener('click', plus);*/
+
+
+
+
+
+
+					/* SWIPER pour les images en bas de page */
+
+$(document).ready(function(){
+	$('#container').caroufredsel({
+		width: 960,
+		scroll: 1,
+	});
+});
