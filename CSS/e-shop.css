@@ -85,13 +85,14 @@ body{
     top: 300px;
     width: 40%;
     left: 195px;
+		visibility: visible;
 }
 .shoes_replace{
     position: relative;
     top: 300px;
     width: 40%;
     right: 290px;
-    display: none;
+    visibility: hidden;
 }
 .heart{
     top: 90px;
