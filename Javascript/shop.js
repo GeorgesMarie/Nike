@@ -22,28 +22,49 @@ $(document).ready(function(){
 					/* À présent, essayons de créer une interaction du click sur
 						le lien ADD TO CART qui ajoutera 1 dans le panier */
 
-/*
-var ajout = document.getElementsByClassName('ajout'),
-		cart = document.getElementsByClassName('add');
-
-console.log(ajout);
-console.log(cart);
-
-function plus(){
-		ajout = document.getElementsByClassName('ajout' + 1);
-}
-
-cart.addEventListener('click', plus);*/
+/*$(document).ready(function(){
+			$(".add").click(function(){
+				$(".ajout").html($(".ajout" + "1")
+				console.log("ler clic fonctionne !")
+			})
+});*/
 
 
 					/* SWIPER pour les images en bas de page */
 
 $(document).ready(function(){
-	$('#carousel').caroufredsel({
-		width: 960,
-		scroll: 1,
-		items: 3,
-		duration: 3000,
-		timeoutDuration: 3000,
-	});
+	var mySwiper = new Swiper('.swiper-container',{
+		pagination: '.pagination',
+		loop:true,
+		grabCursor: true,
+		items: 4,
+		paginationClickable: true
+	})
+	$('.arrow-left').on('click', function(e){
+		e.preventDefault()
+		mySwiper.swipePrev()
+	})
+	$('.arrow-right').on('click', function(e){
+		e.preventDefault()
+		mySwiper.swipeNext()
+	})
 });
+
+
+				/* Code du clic sur search qui affiche un
+							input */
+
+		$(document).ready(function(){
+			$("#loupe").click(function(){
+				$("#search").html("<input type='text' placeholder='...'/>")
+			})
+		})
+
+				/* Code du clic sur sign in qui affiche un
+					formulaire */
+
+$(document).ready(function(){
+		$("#bonhomme").click(function(){
+			$("#sign").html("<input type='text' placeholder='Votre nom'/><br><input type='password' placeholder='Votre mot de passe'/><br><button type='submit'>Login");
+		})
+})

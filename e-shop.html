@@ -4,6 +4,7 @@
 	<title>Nike E-commerce</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="CSS/e-shop.css">
+	<link rel="stylesheet" type="text/css" href="CSS/swiper.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
@@ -29,9 +30,9 @@
 
 			<nav>
 				<ul id="icon">
-					<li><img src="Images/search.png" class="icons"><a href="#" class="object">SEARCH</a></li>
-					<li><img src="Images/basket.png" class="icons"><a href="#" class="object">CART</a><span class="ajout">(2)</span></li>
-					<li><img src="Images/sign_in.png" class="icons"><a href="#" class="object">SIGN IN</a></li>
+					<li><a href="#"><img src="Images/search.png" id="loupe"></a><a href="#" id="search">SEARCH</a></li>
+					<li><a href="#"><img src="Images/basket.png" class="icons"></a><a href="#" class="object">CART</a><span class="ajout">(2)</span></li>
+					<li><a href="#"><img src="Images/sign_in.png" id="bonhomme"></a><a href="#" id="sign">SIGN IN</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -67,8 +68,11 @@
 
 	<section id="demarche">
 		<img src="Images/nike_demarche.png" class="demarche">
-		<h1 class="title">CLASSIC CUSHIONING. MODERN COMFORT.</h1>
-		<p class="paragraphe">The Nike Air Max Tavas SD Men's Shoe recalls the profile of<br> the iconic running original with a Max Air unit in the heel<br> and multi-surface Waffle outsole. A lightweight upper and <br>gradient detail offer a comfortable fit and dynamic look.</p>
+		<h1 class="classic">CLASSIC CUSHIONING. MODERN COMFORT.</h1>
+		<p class="paragraphe">The Nike Air Max Tavas SD Men's Shoe recalls the profile of<br>
+													the iconic running original with a Max Air unit in the heel<br>
+													and multi-surface Waffle outsole. A lightweight upper and <br>
+													gradient detail offer a comfortable fit and dynamic look.</p>
 	</section>
 
 						<!-- ORIGINS SHAPING -->
@@ -78,7 +82,10 @@
 
 			<p class="story">STORY</p>
 			<h2 class="nike_air">NIKE AIR MAX ORIGINS</h2>
-			<p class="revolution">Nike's revolutionary Air-Sole unit made its way into Nike<br> footwear in the late '70s. In 1987, the Nike Air Max 1<br> debuted with visible air in its heel, allowing fans more than<br> just the feel of Air-Sole comfort</p>
+			<p class="revolution">Nike's revolutionary Air-Sole unit made its way into Nike<br>
+														footwear in the late '70s. In 1987, the Nike Air Max 1<br>
+														debuted with visible air in its heel, allowing fans more than<br>
+														just the feel of Air-Sole comfort</p>
 
 			<p class="benefits">BENEFITS</p>
 
@@ -116,17 +123,23 @@
 
 	<footer id="footer">
 		<p class="social">SOCIAL <br><span class="max">#NIKEAIRMAX</span></p>
-				<div id="wrapper">
-					<div id="carousel">
-						<a href="#"><img src="Images/slide_1.png" class="slide"></a>
-						<a href="#"><img src="Images/slide_2.png" class="slide"></a>
-						<a href="#"><img src="Images/slide_3.png" class="slide"></a>
-						<a href="#"><img src="Images/slide_4.png" class="slide"></a>
-					</div>
-				</div>
+
+				<div class="device">
+			    <div class="swiper-container">
+			      <div class="swiper-wrapper">
+							<a href="#" class="swiper-slide"> <img src="Images/slide_1.png"> </a>
+							<a href="#" class="swiper-slide"> <img src="Images/slide_2.png"> </a>
+			        <a href="#" class="swiper-slide"> <img src="Images/slide_3.png"> </a>
+			        <a href="#" class="swiper-slide"> <img src="Images/slide_4.png"> </a>
+			      </div>
+			    </div>
+			    <div class="pagination"></div>
+			  </div>
 	</footer>
 
+							<!-- Insertion des différents Javascript -->
+
 	<script type="text/javascript" src="Javascript/shop.js"></script>
-	<script type="text/javascript" src="Javascript/caroufredsel.js"></script>
+	<script type="text/javascript" src="Javascript/swiper.min.js"></script>
 </body>
 </html>
