@@ -36,15 +36,14 @@ function plus(){
 cart.addEventListener('click', plus);*/
 
 
-
-
-
-
 					/* SWIPER pour les images en bas de page */
 
 $(document).ready(function(){
-	$('#container').caroufredsel({
+	$('#carousel').caroufredsel({
 		width: 960,
 		scroll: 1,
+		items: 3,
+		duration: 3000,
+		timeoutDuration: 3000,
 	});
 });

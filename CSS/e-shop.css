@@ -404,17 +404,27 @@ body{
 }
 .max{
 	color: #333333;
-    font-size: medium;
+  font-size: medium;
 }
-#container{
-		position: absolute;
-    bottom: 50px;
-    left: 70px;
-		width: 960px;
+#wrapper{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    position: relative;
+    top: 200px;
+}
+#carousel > a {
+	float: left;
+	overflow: hidden;
+}
+#carousel {
+	left: 140px;
+	position: absolute;;
 }
 .slide{
+	width: 100%;
+	border: none;
+	float: left;
+	padding: 20px;
 	position: relative;
-	bottom: 120px;
-	width: 20%;
-	padding-left: 40px
 }
