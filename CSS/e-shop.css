@@ -5,6 +5,7 @@
 body{
 	margin: 0px;
 	padding: 0px;
+	cursor: auto;
 }
 
 			/* HEADER SHAPPING */
@@ -46,7 +47,7 @@ body{
 	color: #0089cf;
 	border-bottom: solid 3px #0089cf;
 	padding-bottom: 30px;
-	transition: .5s;
+	transition: all .5s;
 }
 #icon li{
 	display: inline-block;
@@ -97,7 +98,7 @@ body{
 #nike{
     background-color: #fff;
     height: 610px;
-    width: 1201px;
+    width: 1216px;
     left: 32px;
     top: 20px;
     position: relative;
@@ -327,7 +328,7 @@ body{
     float: right;
     right: 50px;
     top: 98px;
-    position: absolute;
+    position: fixed;
 }
 .near{
  	position: relative;

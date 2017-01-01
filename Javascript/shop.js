@@ -24,8 +24,8 @@ $(document).ready(function(){
 
 /*$(document).ready(function(){
 			$(".add").click(function(){
-				$(".ajout").html($(".ajout" + "1")
-				console.log("ler clic fonctionne !")
+				$(".ajout").html($(".ajout" + "3"));
+				console.log("ler clic fonctionne !");
 			})
 });*/
 
@@ -68,3 +68,13 @@ $(document).ready(function(){
 			$("#sign").html("<input type='text' placeholder='Votre nom'/><br><input type='password' placeholder='Votre mot de passe'/><br><button type='submit'>Login");
 		})
 })
+
+
+
+							/* Code de l'Id #frame qui suit le scroll */
+
+$(document).ready(function(){
+	$(window).scroll(function(){
+				$("#frame").css( "top", $(this).scrollTop());
+	});
+});
