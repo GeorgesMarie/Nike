@@ -1,16 +1,15 @@
-					/* Fonction qui change la propriété CSS quand on clique sur
-						la nike de droite*/
-
+					/* Function that changes the CSS
+					property when you click
+					The right nike */
 $(document).ready(function(){
 		$(".nikeD").click(function(){
 			$(".shoes_replace").css("visibility", "visible");
 			$(".shoes").css("visibility", "hidden");
 		});
 });
-
-					/* Fonction qui change la propriété CSS quand on clique sur
-						la nike de gauche*/
-
+					/* Function that changes the CSS
+					property when you click
+					The left nike */
 $(document).ready(function(){
 		$(".nikeG").click(function(){
 			$(".shoes").css("visibility", "visible");
@@ -18,10 +17,8 @@ $(document).ready(function(){
 		});
 });
 
-
-					/* À présent, essayons de créer une interaction du click sur
-						le lien ADD TO CART qui ajoutera 1 dans le panier */
-
+					/* Now, try to create a click interaction on
+						The link ADD TO CART which will add 1 to the cart */
 /*$(document).ready(function(){
 			$(".add").click(function(){
 				$(".ajout").html($(".ajout" + "3"));
@@ -29,9 +26,7 @@ $(document).ready(function(){
 			})
 });*/
 
-
-					/* SWIPER pour les images en bas de page */
-
+					/* SWIPER for footer images */
 $(document).ready(function(){
 	var mySwiper = new Swiper('.swiper-container',{
 		pagination: '.pagination',
@@ -42,37 +37,36 @@ $(document).ready(function(){
 		paginationClickable: true,
 	})
 });
-
-
-				/* Code du clic sur search qui affiche un
-							input */
-
+				/* Code of click on search
+					which displays a
+					Input */
 		$(document).ready(function(){
 			$("#loupe").click(function(){
-				$("#search").html("<input type='text' placeholder='...'/>")
+				$("#search").html("<input type='text' placeholder='Search'/>");
 			})
 		})
 
-				/* Code du clic sur sign in qui affiche un
-					formulaire */
-
+				/* Code of the click on sign
+				 	in which displays a
+					form */
 $(document).ready(function(){
 		$("#bonhomme").click(function(){
 			$("#sign").html("<input type='text' placeholder='Votre nom'/><br><input type='password' placeholder='Votre mot de passe'/><br><button type='submit'>Login");
 		})
 })
 
-							/* Code de l'Id #frame qui suit le scroll */
-
+							/* Id of the #frame following the scroll*/
 $(document).ready(function(){
 	$(window).scroll(function(){
-				$("#frame").css( "top", $(this).scrollTop());
+
+		if ($(window).scrollTop() > 500 && $(window).scrollTop() < 1000)
+
+		$("#frame").css("position", "absolute").css("top", -624);
+
 	});
 });
 
-								/* Code qui change le coeur quand on clique */
-
-
+								/* Code that changes the heart when you click */
 $(document).ready(function(){
 				$(".heart").click(function(){
 				$(".heart_2").css("visibility", "visible");
