@@ -69,12 +69,27 @@ $(document).ready(function(){
 		})
 })
 
-
-
 							/* Code de l'Id #frame qui suit le scroll */
 
 $(document).ready(function(){
 	$(window).scroll(function(){
 				$("#frame").css( "top", $(this).scrollTop());
+	});
+});
+
+								/* Code qui change le coeur quand on clique */
+
+
+$(document).ready(function(){
+				$(".heart").click(function(){
+				$(".heart_2").css("visibility", "visible");
+				$(".heart").css("visibility", "hidden");
+	});
+});
+
+$(document).ready(function(){
+				$(".heart_2").click(function(){
+				$(".heart").css("visibility", "visible");
+				$(".heart_2").css("visibility", "hidden");
 	});
 });
