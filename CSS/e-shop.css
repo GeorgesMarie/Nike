@@ -50,7 +50,7 @@ body{
 	transition: all .5s;
 }
 #icon li{
-	display: inline-block;
+		display: inline-block;
     position: relative;
     left: 65%;
 }
@@ -71,6 +71,12 @@ body{
 	text-decoration: none;
 	font-family: 'DINNextLTPro-MediumCond.otf', sans-serif;
 }
+.object:hover{
+	color: #0089cf;
+	border-bottom: solid 3px #0089cf;
+	padding-bottom: 30px;
+	transition: all .5s;
+}
 #search{
 	font-size: 12px;
 	font-weight: bold;
@@ -79,6 +85,12 @@ body{
 	text-decoration: none;
 	font-family: 'DINNextLTPro-MediumCond.otf', sans-serif;
 }
+#search:hover{
+	color: #0089cf;
+	border-bottom: solid 3px #0089cf;
+	padding-bottom: 30px;
+	transition: all .5s;
+}
 #sign{
 	font-size: 12px;
 	font-weight: bold;
@@ -86,6 +98,12 @@ body{
 	padding-left: 6px;
 	text-decoration: none;
 	font-family: 'DINNextLTPro-MediumCond.otf', sans-serif;
+}
+#sign:hover{
+	color: #0089cf;
+	border-bottom: solid 3px #0089cf;
+	padding-bottom: 30px;
+	transition: all .5s;
 }
 .ajout{
 	color: #0089cf;
@@ -114,7 +132,7 @@ body{
     position: relative;
     top: 300px;
     width: 40%;
-    right: 290px;
+    right: 296px;
 		visibility: hidden;
 }
 .heart{
@@ -123,6 +141,10 @@ body{
     border: 1px solid #e4e4e4;
     padding: 15px;
     position: absolute;
+}
+.heart:hover{
+	transition: .5s;
+	box-shadow: 0px 0px 9px #888;
 }
 .name_of_shoes{
     position: relative;
@@ -164,10 +186,18 @@ body{
     left: 780px;
     bottom: 45px;
 }
+.nikeG:hover{
+	transition: .5s;
+	box-shadow: 0px 0px 9px #888;
+}
 .nikeD{
 	position: relative;
     left: 790px;
     bottom: 45px;
+}
+.nikeD:hover{
+	transition: .5s;
+	box-shadow: 0px 0px 9px #888;
 }
 .size{
     position: relative;
@@ -197,7 +227,7 @@ body{
     font-family: 'DINNextLTPro-MediumCond.otf', sans-serif;
 }
 .add{
-	color: white;
+		color: white;
     position: absolute;
     right: 110px;
     bottom: 83px;
@@ -205,6 +235,9 @@ body{
     text-decoration: none;
     padding: 17px 20px;
     font-family: 'DINNextLTPro-MediumCond.otf', sans-serif;
+}
+.add:hover{
+	background-color: #0089cf;
 }
 
 			/* DEMARCHE SHAPING */
