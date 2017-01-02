@@ -37,16 +37,9 @@ $(document).ready(function(){
 		pagination: '.pagination',
 		loop:true,
 		grabCursor: true,
-		items: 4,
-		paginationClickable: true
-	})
-	$('.arrow-left').on('click', function(e){
-		e.preventDefault()
-		mySwiper.swipePrev()
-	})
-	$('.arrow-right').on('click', function(e){
-		e.preventDefault()
-		mySwiper.swipeNext()
+		slidesPerView: 4,
+		spaceBetween: 3,
+		paginationClickable: true,
 	})
 });
 
