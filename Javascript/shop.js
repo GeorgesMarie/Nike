@@ -19,12 +19,21 @@ $(document).ready(function(){
 
 					/* Now, try to create a click interaction on
 						The link ADD TO CART which will add 1 to the cart */
-/*$(document).ready(function(){
-			$(".add").click(function(){
-				$(".ajout").html($(".ajout" + "3"));
-				console.log("ler clic fonctionne !");
-			})
-});*/
+$(document).ready(function(){
+			var $clicks = 0;
+				$(".add").click(function(){
+				$clicks++;
+				$(".ajout").html("(" + $clicks + ")");
+		});
+});
+
+$(document).ready(function(){
+			var $clicks = 0;
+				$(".add_2").click(function(){
+				$clicks++;
+				$(".ajout").html("(" + $clicks + ")");
+		});
+});
 
 					/* SWIPER for footer images */
 $(document).ready(function(){
