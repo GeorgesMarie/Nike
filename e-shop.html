@@ -30,25 +30,36 @@
 			<nav>
 				<ul id="icon">
 					<li><a href="#"><img src="Images/search.png" id="loupe"></a><a href="#" id="search">SEARCH</a></li>
-					<li><a href="#"><img src="Images/basket.png" class="icons"></a><a href="#" class="object">CART</a><span class="ajout">(0)</span></li>
-					<li><a href="#"><img src="Images/sign_in.png" id="bonhomme"></a><a href="#" id="sign">SIGN IN</a></li>
+					<li><a href="#"><img src="Images/basket.png" id="basket"></a><a href="#" id="cart">CART</a><span class="ajout">(0)</span></li>
+					<li><a href="#"><img src="Images/sign_in.png" id="fellow"></a><a href="#" id="sign">SIGN IN</a></li>
 				</ul>
 			</nav>
 		</div>
+
+					<!-- Code of form that display when we click on sign in icon -->
+		<div class="messagepop pop">
+			  <form method="post" id="new_message" action="/messages">
+		      <p><label for="email">Your email or name</label><input type="text" size="30" name="email" id="email" placeholder="E-mail" /></p>
+					<p><label for="password">Your password</label><input type="text" size="30" name="password" id="password" placeholder="Password" /></p>
+			    <p><a class="forget" href="#">MOT DE PASSE OUBLIÉ ?</a><a class="close" href="#">Login</a></p>
+					<p><a class="create" href="#">CRÉER UN COMPTE ?</a></p>
+		  </form>
+	</div>
+
+
 	</header>
 
 						<!-- NIKE SHAPING -->
 		<div id="nike">
 			<img src="Images/nike.png" class="shoes">
-			<img src="Images/nike_replace.png" class="shoes_replace">
-			<img src="Images/heart.png" class="heart">
-			<img src="Images/heart_2.png" class="heart_2">
+					<img src="Images/heart.png" class="heart">
 			<p class="name_of_shoes">NIKE</p>
-			<p class="series_of_shoes">AIR MAX TAVAS SD</p>
+			<h1 class="series_of_shoes">AIR MAX TAVAS SD</h1>
 			<p class="price">$ 160.00</p>
 			<p class="color">COLORS - <span class="colors">BLACK/PINK POW/TOUR YELLOW/WHITE</span></p>
 			<img src="Images/nike_gauche.png" class="nikeG">
 			<img src="Images/nike_droit.png" class="nikeD">
+			<img src="Images/third_nike.png" class="nikeT">
 			<p class="size">Size charts</p>
 
 			<form id="form">
@@ -60,13 +71,13 @@
 					<option value="size">41</option>
 				</select>
 			</form>
-			<a href="#" class="add">ADD TO CART</a>
+			<button class="add">ADD TO CART</button>
 		</div>
 
 						<!-- DEMARCHE SHAPING -->
 	<section id="demarche">
 		<img src="Images/nike_demarche.png" class="demarche">
-		<h1 class="classic">CLASSIC CUSHIONING. MODERN COMFORT.</h1>
+		<p class="classic">CLASSIC CUSHIONING. MODERN COMFORT.</p>
 		<p class="paragraphe">The Nike Air Max Tavas SD Men's Shoe recalls the profile of<br>
 													the iconic running original with a Max Air unit in the heel<br>
 													and multi-surface Waffle outsole. A lightweight upper and <br>
@@ -110,7 +121,7 @@
 					<option value="size">41</option>
 				</select>
 			</form>
-			<a href="#" class="add_2">ADD TO CART</a>
+			<button class="add_2">ADD TO CART</button>
 		</div>
 	</section>
 
@@ -134,10 +145,37 @@
 				<!-- Add Pagination -->
 				<div id="swiper-pagination-center" class="swiper-pagination"></div>
 		</div>
-
 	</footer>
 							<!-- Insertion des différents Javascript -->
 	<script type="text/javascript" src="Javascript/shop.js"></script>
 	<script type="text/javascript" src="Javascript/swiper.min.js"></script>
+
+						<!-- Sound that play when we to increment a value -->
+	<audio id="beep-one" controls="controls" preload="auto">
+				<source src="Media/9759.wav"></source>
+				<source src="Media/9759.wav"></source>
+				Your browser isn't invited for super fun time.
+	</audio>
+
+						<!-- Sound that play when we click to change central image-->
+	<audio id="sound" controls="controls" preload="auto">
+				<source src="Media/9758.wav"></source>
+				<source src="Media/9758.wav"></source>
+				Your browser isn't invited for super fun time.
+	</audio>
+
+						<!-- Sound that play when mouseenter on list -->
+	<audio id="beep" controls="controls" preload="auto">
+				<source src="Media/beep.mp3"></source>
+				<source src="Media/beep.mp3"></source>
+				Your browser isn't invited for super fun time.
+	</audio>
+
+						<!-- Sound that play when we click on sign ID-->
+	<audio id="beep_beep" controls="controls" preload="auto">
+				<source src="Media/nudge.wav"></source>
+				<source src="Media/nudge.wav"></source>
+				Your browser isn't invited for super fun time.
+	</audio>
 </body>
 </html>
