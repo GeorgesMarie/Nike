@@ -2,10 +2,12 @@
 $(document).ready(function(){
 			$('.nikeD').click(function(){
 			$('.shoes').attr('src', 'Images/nike_replace.png');
+			$('.near').attr('src', 'Images/nike_replace.png');
 		});
 
 		$('.nikeG').click(function(){
 			$('.shoes').attr('src', 'Images/nike.png');
+			$('.near').attr('src', 'Images/nike_near.png');
 		});
 });
 
