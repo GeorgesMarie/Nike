@@ -1,18 +1,11 @@
 					/* Function that changes central image  */
 $(document).ready(function(){
-			$('.nikeD').mouseenter(function(){
+			$('.nikeD').click(function(){
 			$('.shoes').attr('src', 'Images/nike_replace.png');
-			sound.play();
 		});
 
-		$('.nikeG').mouseenter(function(){
+		$('.nikeG').click(function(){
 			$('.shoes').attr('src', 'Images/nike.png');
-			sound.play();
-		});
-
-		$('.nikeT').mouseenter(function(){
-			$('.shoes').attr('src', 'Images/nike_3.png');
-			sound.play();
 		});
 });
 
@@ -23,18 +16,23 @@ $(document).ready(function(){
 				$(".add, .add_2").click(function(){
 					$clicks++;
 				$(".ajout").html("(" + $clicks + ")");
-				beepOne.play();
+		});
+				$("#cart").click(function(){
+					while ($clicks != 0) {
+						$clicks--;
+						$(".ajout").html("(" + $clicks + ")");
+					}
 		});
 });
-
 					/* SWIPER for images on footer */
 $(document).ready(function(){
 	var mySwiper = new Swiper('.swiper-container',{
 		pagination: '.pagination',
 		loop:true,
+		width: 575,
 		grabCursor: true,
-		slidesPerView: 4,
-		spaceBetween: 3,
+		slidesPerView: 2,
+		spaceBetween: 1,
 		paginationClickable: true,
 	});
 });
@@ -42,24 +40,35 @@ $(document).ready(function(){
 		$(document).ready(function(){
 			$("#search").click(function(){
 					$("#search").html("<input type='text' placeholder='Search'/>");
-					$("#icon li").css("left", "60%");
+					$("#icon li").css("left", "65%");
 			});
 	});
 
 	$(document).ready(function(){
 		$("#loupe").click(function(){
 				$("#search").html("<a>SEARCH</a>");
-				$("#icon li").css("left", "65%");
+				$("#icon li").css("left", "70%");
 		});
 });
 
 							/* Id of the #frame following the scroll*/
-	$(document).ready(function(){
-		$(window).scroll(function(){
-			if ($(window).scrollTop() > 500 && $(window).scrollTop() < 1000)
-			$("#frame").css("position", "absolute").css("top", -624);
+	$(document).ready(function() {
+								// Set this variable with the height of your sidebar + header
+			var offsetPixels = 700;
+
+			$(window).scroll(function() {
+			if ($(window).scrollTop() > offsetPixels) {
+			$( "#frame" ).css({
+					"position": "fixed",
+					"top": "20px"
+				});
+						} else {
+							$( "#frame" ).css({
+								"position": "absolute"
+					});
+				}
 		});
-	});
+});
 
 								/* Code that changes the heart when you click */
 $(document).ready(function(){
@@ -81,11 +90,10 @@ function deselect(e) {
   $('.pop').slideFadeToggle(function() {
     e.removeClass('selected');
   });
-}
+};
 
 $(function() {
   $('#fellow').on('click', function() {
-		beep_beep.play();
     if($(this).hasClass('selected')) {
       deselect($(this));
     } else {
@@ -104,10 +112,3 @@ $(function() {
 $.fn.slideFadeToggle = function(easing, callback) {
   return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
 };
-
-						/* Code js that plays sound at the time of the hover */
-$(document).ready(function(){
-			$(".options, #search, #cart, #sign").mouseenter(function(){
-			beep.play();
-		});
-});

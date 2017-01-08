@@ -13,14 +13,19 @@
  * Released on: October 16, 2016
  */
 .swiper-container{
-  margin-left:auto;margin-right:auto;position:relative;overflow:hidden;z-index:1}
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  overflow:hidden;
+  z-index:1;
+}
 .swiper-container-no-flexbox .swiper-slide{float:left}
 .swiper-container-vertical>.swiper-wrapper{
   -webkit-box-orient:vertical;
   -moz-box-orient:vertical;
   -ms-flex-direction:column;
   -webkit-flex-direction:column;
-  flex-direction:column
+  flex-direction:column;
 }
 .swiper-wrapper{
   position:relative;
@@ -43,7 +48,12 @@
 .swiper-container-android .swiper-slide,.swiper-wrapper{
   -webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-o-transform:translate(0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 .swiper-container-multirow>.swiper-wrapper{
-  -webkit-box-lines:multiple;-moz-box-lines:multiple;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap}
+  -webkit-box-lines:multiple;
+  -moz-box-lines:multiple;
+  -ms-flex-wrap:wrap;
+  -webkit-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
 .swiper-container-free-mode>.swiper-wrapper{
   -webkit-transition-timing-function:ease-out;
   -moz-transition-timing-function:ease-out;
@@ -53,7 +63,13 @@
   margin:0 auto
 }
 .swiper-slide{
-  -webkit-flex-shrink:0;-ms-flex:0 0 auto;flex-shrink:0;width:100%;height:100%;position:relative}
+  -webkit-flex-shrink:0;
+  -ms-flex:0 0 auto;
+  flex-shrink:0;
+  width:100%;
+  height:100%;
+  position:relative;
+}
 .swiper-container-autoheight,.swiper-container-autoheight .swiper-slide{height:auto}
 .swiper-container-autoheight .swiper-wrapper{
   -webkit-box-align:start;
@@ -67,7 +83,13 @@
   transition-property:transform,height
 }
 .swiper-container .swiper-notification{
-  position:absolute;left:0;top:0;pointer-events:none;opacity:0;z-index:-1000}
+  position:absolute;
+  left:0;
+  top:0;
+  pointer-events:none;
+  opacity:0;
+  z-index:-1000;
+}
 .swiper-wp8-horizontal{-ms-touch-action:pan-y;touch-action:pan-y}
 .swiper-wp8-vertical{-ms-touch-action:pan-x;touch-action:pan-x}
 .swiper-button-next,.swiper-button-prev{
@@ -118,19 +140,19 @@
   z-index:10
 }
 .swiper-pagination.swiper-pagination-hidden{opacity:0}
-.swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:10px;left:0;width:100%}
+.swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:10px;left:100px;width:100%}
 .swiper-pagination-bullet{
   width:8px;
   height:8px;
   display:inline-block;
   border-radius:100%;
-  background:#fff;
+  background:red;
   opacity:.2;
-  margin-left:
-  10px;
+  margin-left:10px;
 }
 button.swiper-pagination-bullet{
-  border:none;margin:0;
+  border:none;
+  margin:0;
   padding:0;
   box-shadow:none;
   -moz-appearance:none;
@@ -139,10 +161,10 @@ button.swiper-pagination-bullet{
   appearance:none
 }
 .swiper-pagination-clickable .swiper-pagination-bullet{cursor:pointer}
-.swiper-pagination-white .swiper-pagination-bullet{background:#fff}
+.swiper-pagination-white .swiper-pagination-bullet{background:red}
 .swiper-pagination-bullet-active{opacity:1;background:#007aff}
-.swiper-pagination-white .swiper-pagination-bullet-active{background:#fff}
-.swiper-pagination-black .swiper-pagination-bullet-active{background:#000}
+.swiper-pagination-white .swiper-pagination-bullet-active{background:#000}
+.swiper-pagination-black .swiper-pagination-bullet-active{background:#fff}
 .swiper-container-vertical>.swiper-pagination-bullets{
   right:10px;
   top:50%;
@@ -250,7 +272,7 @@ button.swiper-pagination-bullet{
   -webkit-transition-property:opacity;
   -moz-transition-property:opacity;
   -o-transition-property:opacity;
-  transition-property:opacity
+  transition-property:opacity;
 }
 .swiper-container-fade .swiper-slide .swiper-slide{pointer-events:none}
 .swiper-container-fade .swiper-slide-active,.swiper-container-fade .swiper-slide-active .swiper-slide-active{pointer-events:auto}
@@ -272,13 +294,35 @@ button.swiper-pagination-bullet{
   -ms-flex-align:center;
   -webkit-align-items:center;
   align-items:center;
-  text-align:center
+  text-align:center;
 }
 .swiper-zoom-container>canvas,.swiper-zoom-container>img,.swiper-zoom-container>svg{max-width:100%;max-height:100%;object-fit:contain}
 .swiper-scrollbar{border-radius:10px;position:relative;-ms-touch-action:none;background:rgba(0,0,0,.1)}
-.swiper-container-horizontal>.swiper-scrollbar{position:absolute;left:1%;bottom:3px;z-index:50;height:5px;width:98%}
-.swiper-container-vertical>.swiper-scrollbar{position:absolute;right:3px;top:1%;z-index:50;width:5px;height:98%}
-.swiper-scrollbar-drag{height:100%;width:100%;position:relative;background:rgba(0,0,0,.5);border-radius:10px;left:0;top:0}
+.swiper-container-horizontal>.swiper-scrollbar{
+  position:absolute;
+  left:1%;
+  bottom:3px;
+  z-index:50;
+  height:5px;
+  width:98%;
+}
+.swiper-container-vertical>.swiper-scrollbar{
+  position:absolute;
+  right:3px;
+  top:1%;
+  z-index:50;
+  width:5px;
+  height:98%;
+}
+.swiper-scrollbar-drag{
+  height:100%;
+  width:100%;
+  position:relative;
+  background:rgba(0,0,0,.5);
+  border-radius:10px;
+  left:0;
+  top:0;
+}
 .swiper-scrollbar-cursor-drag{cursor:move}
 .swiper-lazy-preloader {
   width:42px;
