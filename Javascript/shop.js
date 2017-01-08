@@ -56,7 +56,7 @@ $(document).ready(function(){
 							/* Id of the #frame following the scroll*/
 	$(document).ready(function() {
 								// Set this variable with the height of your sidebar + header
-			var recup = 1370,
+			var recup = 1340,
 					offsetPixels = 450;
 
 			$(window).scroll(function() {

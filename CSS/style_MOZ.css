@@ -5,33 +5,14 @@
 					D'AFFICHAGE AVEC MOZILLA FIREFOX. NE DÉSESPÈRE POINT,
 						LE TRAVAIL CONTINUE POUR RÉSOUDRE CE SOUCIS. */
 
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,table, caption,
-tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
 @font-face{
 	font-family: "DINNextLTPro-MediumCond" "HelveticaNeueLTStd-MdCn";
 	src: url('Font/DINNextLTPro-MediumCond.otf');
 	src: url('Font/HelveticaNeueLTStd-MdCn.otf')
 }
 body{
+	margin: 0px;
+	padding: 0px;
 	cursor: auto;
 }
 
@@ -39,9 +20,9 @@ body{
 
 #bg{
 	background-color: #c8cfdc;
-  width: 100%;
-  height: 2650px;
-  overflow: hidden;
+    width: 100%;
+    height: 2673px;
+    overflow: hidden;
 }
 
 #header{
@@ -50,7 +31,7 @@ body{
 	position: relative;
 	width: 95%;
 	height: 90px;
-	top: 30px;
+	top: 20px;
 }
 .image{
     padding: 20px 0px 0px 40px;
@@ -125,7 +106,7 @@ body{
     height: 610px;
     width: 1216px;
     left: 32px;
-    top: 30px;
+    top: 20px;
     position: relative;
 }
 .shoes{
@@ -152,7 +133,7 @@ body{
 		visibility: hidden;
 }
 .name_of_shoes{
-	bottom: 90px;
+	bottom: 130px;
 	color: #333333;
 	font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
 	left: 780px;
@@ -160,7 +141,7 @@ body{
 	position: relative;
 }
 .series_of_shoes{
-	bottom: 90px;
+	bottom: 155px;
 	color: #333333;
 	font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
 	font-size: 35px;
@@ -169,7 +150,7 @@ body{
 	position: relative;
 }
 .price{
-	bottom: 95px;
+	bottom: 180px;
 	color: #666666;
 	font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
 	font-size: 18px;
@@ -177,7 +158,7 @@ body{
 	position: relative;
 }
 .color{
-		bottom: 75px;
+		bottom: 180px;
     color: #666666;
     font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
     font-size: 14px;
@@ -189,7 +170,7 @@ body{
 	font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
 }
 .nikeG{
-	bottom: 64px;
+	bottom: 175px;
 	left: 780px;
 	position: relative;
 }
@@ -200,14 +181,14 @@ body{
 .nikeD{
 		position: relative;
     left: 790px;
-    bottom: 64px;
+    bottom: 175px;
 }
 .nikeD:hover{
 	transition: .5s;
 	box-shadow: 0px 0px 9px #888;
 }
 .size{
-	bottom: 60px;
+	bottom: 180px;
 	color: #d6d6d6;
 	font-family: "Roboto",sans-serif;
 	font-size: 12px;
@@ -240,13 +221,13 @@ body{
 .add {
 	color: white;
 	position: absolute;
-	right: 185px;
+	right: 165px;
 	bottom: 115px;
 	background-color: #333333;
-	padding: 14.5px 30px;
+	padding: 15px 20px;
 	border: 0px;
-	font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
 	font-size: 14px;
+	font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
 }
 .add:hover{
 	background-color: #0089cf;
@@ -264,12 +245,12 @@ body{
   	position: relative;
     width: 95%;
     left: 32px;
-    top: 30px;
+    top: 20px;
 }
 .classic{
 	color: white;
 	position: absolute;
-	top: 43%;
+	top: 39%;
 	left: 6%;
 	font-size: 25px;
 	font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
@@ -292,7 +273,6 @@ body{
     height: 660px;
     position: relative;
     left: 32px;
-		top: 26px;
 }
 .paire{
 	width: 95%;
@@ -304,14 +284,14 @@ body{
   left: 80px;
   opacity: .5;
   font-size: 14px;
-  top: 60px;
+  top: 98px;
   font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
 }
 .nike_air{
 	position: relative;
 	color: #333333;
 	left: 80px;
-	top: 60px;
+	top: 80px;
 	font-size: 25px;
 	font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
 }
@@ -333,7 +313,7 @@ body{
 }
 .model{
 	position: relative;
-	top: 128px;
+	top: 100px;
 	left: 80px;
 	color: #333333;
 	font-size: 18px;
@@ -341,7 +321,7 @@ body{
 }
 .model_1{
 	position: relative;
-	top: 152px;
+	top: 100px;
 	left: 80px;
 	color: #333333;
 	font-size: 18px;
@@ -349,7 +329,7 @@ body{
 }
 .model_2{
 	position: relative;
-	top: 170px;
+	top: 95px;
 	left: 80px;
 	color: #333333;
 	font-size: 18px;
@@ -357,7 +337,7 @@ body{
 }
 .model_3{
 	position: relative;
-	top: 185px;
+	top: 75px;
 	left: 80px;
 	color: #333333;
 	font-size: 18px;
@@ -386,18 +366,14 @@ body{
 		box-shadow: 0px 0px 9px #888;
 }
 .near{
-	position: relative;
-	left: 20px;
-	top: 138px;
-	width: 90%;
-}
-.near:hover{
-	transition: .5s;
-	box-shadow: 0px 0px 20px #b1bfc6;
+ 	position: relative;
+    left: 40px;
+    top: 138px;
+    width: 70%;
 }
 .nike{
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 20px;
     color: #333333;
     font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
@@ -463,11 +439,11 @@ body{
 .add_2{
 	color: white;
 	position: absolute;
-	right: 40px;
+	right: 18px;
 	bottom: 26px;
 	background-color: #333333;
 	text-decoration: none;
-	padding: 14.5px 20px;
+	padding: 15px 10px;
 	border: 0px;
 	font-size: 14px;
 	font-family: 'DINNextLTPro-MediumCond', 'HelveticaNeueLTStd-MdCn', sans-serif;
@@ -487,7 +463,6 @@ body{
     height: 660px;
     position: relative;
     left: 32px;
-		top: 26px;
 }
 .social{
 	position: absolute;
@@ -503,7 +478,7 @@ body{
 }
 #device {
 	position: relative;
-	top: 260px;
+	top: 300px;
 	left: 50px;
 	padding-right: 45px;
 	padding-left: 45px;
