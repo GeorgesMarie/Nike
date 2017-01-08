@@ -54,19 +54,24 @@ $(document).ready(function(){
 							/* Id of the #frame following the scroll*/
 	$(document).ready(function() {
 								// Set this variable with the height of your sidebar + header
-			var offsetPixels = 700;
+			var recup = 1370,
+					offsetPixels = 450;
 
 			$(window).scroll(function() {
-			if ($(window).scrollTop() > offsetPixels) {
+			if ($(window).scrollTop() >= offsetPixels && ($(window).scrollTop() <= recup)) {
+				console.log(window.pageYOffset);
 			$( "#frame" ).css({
 					"position": "fixed",
-					"top": "20px"
+					"top": "293px",
+					"right": "60px"
+
 				});
 						} else {
 							$( "#frame" ).css({
-								"position": "absolute"
+								"position": "absolute",
+								"right": "28px"
 					});
-				}
+				};
 		});
 });
 
